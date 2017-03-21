@@ -101,7 +101,7 @@ REQUESTEDAUTHN;
                 $requestedAuthnStr .= "    <samlp:RequestedAuthnContext Comparison=\"$authnComparison\">\n";
 
                 $requestedAuthnContextArray = explode(',', $security['requestedAuthnContext']);
-                
+
                 foreach ($requestedAuthnContextArray as $contextValue) {
                     $requestedAuthnStr .= "        <saml:AuthnContextClassRef>" . $contextValue . "</saml:AuthnContextClassRef>\n";
                 }
